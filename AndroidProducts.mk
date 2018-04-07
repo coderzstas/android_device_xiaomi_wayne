@@ -24,3 +24,9 @@
 # inherit MI 6X AICP device config
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aicp_wayne.mk
+
+COMMON_LUNCH_CHOICES := \
+    aicp_wayne-eng \
+    aicp_wayne-userdebug \
+		aicp_wayne-user
+
