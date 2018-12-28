@@ -22,12 +22,12 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
 # Inherit from wayne device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_NAME := lineage_wayne
+PRODUCT_NAME := xenonhd_wayne
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := wayne
 PRODUCT_MANUFACTURER := Xiaomi
@@ -39,5 +39,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="wayne-user 8.1.0 OPM1.171019.011 V9.5.11.0.ODCCNFA release-keys"
 
 BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xenonhd.maintainer=Stanislav Bukovetskiy
 
 TARGET_VENDOR_PRODUCT_NAME := wayne

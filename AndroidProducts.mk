@@ -23,4 +23,4 @@
 
 # inherit MI 6X HAVOC device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_wayne.mk
+    $(LOCAL_DIR)/xenonhd_wayne.mk
