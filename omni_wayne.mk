@@ -37,3 +37,9 @@ PRODUCT_MODEL := MI 6X
 TARGET_VENDOR_PRODUCT_NAME := wayne
 TARGET_VENDOR_DEVICE_NAME := wayne
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=wayne PRODUCT_NAME=wayne
+
+# enable stock zip packages flash
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.secure=1 \
+    ro.adb.secure=0 \
+    ro.allow.mock.location=0
