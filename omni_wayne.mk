@@ -42,5 +42,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=wayne PRODUCT_NAME=wayne
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.secure=1 \
     ro.adb.secure=0 \
-    ro.allow.mock.location=0
+    ro.allow.mock.location=0 \
     ro.treble.enabled=true
