@@ -1,5 +1,5 @@
 device_xiaomi_wayne
-Tree for building TWRP for Xiaomi MI 6
+Tree for building TWRP for Xiaomi MI 6X
 
 ##To compile
 export ALLOW_MISSING_DEPENDENCIES=true
