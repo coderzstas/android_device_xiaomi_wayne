@@ -42,6 +42,10 @@ BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2018-06-05
 
+# System as root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init root=/dev/dm-0 dm=\"system none ro,0 1 android-verity /dev/mmcblk0p61\"
+
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_wayne
 TARGET_RECOVERY_DEVICE_MODULES := libinit_wayne
