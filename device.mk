@@ -91,6 +91,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.vibrator@1.1-service.xiaomi_sdm660
 
+# Watermark
+PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)/media/MIUI_DualCamera_watermark_6X.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
+
 # Vendor files
 $(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)
 
