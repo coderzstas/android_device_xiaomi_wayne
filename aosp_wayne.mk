@@ -25,12 +25,13 @@
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
 # Inherit from Havoc custom product configuration
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Some Pixel Shit
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
 
 TARGET_VENDOR_PRODUCT_NAME := wayne
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.havoc.maintainer=rcstar6696
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
